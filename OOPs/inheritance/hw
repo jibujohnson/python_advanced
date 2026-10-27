@@ -1,0 +1,55 @@
+MULTIPLE INHERITANCE
+
+Person:
+       name,age,place,mob.no,email_id
+Salary:
+       basic salary,bonus,date of joining
+Employee(Person,Salary):
+       emp_id,designation
+
+*************************************************************
+
+MULTIPLE INHERITANCE
+
+ONLINE SHOPPING
+
+Customer:
+    name,mob,address,email
+Product:
+    prod_name,price,description
+Order(Customer,Product)
+    order_id,quantity,total price,order date
+
+*************************************************************
+
+HIERARCHICAL INHERITANCE
+
+BANKING SYSTEM
+
+Bank:   #parent class
+    bank_name,branch,ifsc_code,manager_name,contact_name
+Savings_Account(Bank):
+    acc_no,customer_name,balance,mob,interest_rate
+Current_Account(Bank):
+    acc_no,customer_name,balance,business_name
+Loan_Account(Bank):
+    loan_no,customer_name,loan_amount,interest_rate,loan_type,duration
+
+*************************************************************
+
+HIERARCHICAL INHERITANCE
+
+Company:
+Child classes:Developer,tester,HR,Manager
+
+#Add 2 or 3 attributes per class4
+
+*************************************************************
+MULTILEVEL INHERITANCE
+
+class Hospital:
+    hospital name,location,contact
+class Department(Hospital):
+    id,dept_name,hod name
+class Patient(Department):
+    p)id,name,age,place,illness,contact
